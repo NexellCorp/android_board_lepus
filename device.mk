@@ -33,6 +33,13 @@ PRODUCT_COPY_FILES += \
 	device/nexell/lepus/ueventd.lepus.rc:root/ueventd.lepus.rc \
 	device/nexell/lepus/adj_lowmem.sh:root/adj_lowmem.sh \
 	device/nexell/lepus/bootanimation.zip:system/media/bootanimation.zip
+
+################################################################################
+# recovery
+################################################################################
+PRODUCT_COPY_FILES += \
+	device/nexell/lepus/busybox:busybox
+
 ################################################################################
 # key
 ################################################################################
