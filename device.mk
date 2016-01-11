@@ -137,7 +137,7 @@ PRODUCT_COPY_FILES += \
   frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml \
   frameworks/native/data/etc/android.hardware.sensor.accelerometer.xml:system/etc/permissions/android.hardware.sensor.accelerometer.xml \
   frameworks/native/data/etc/android.hardware.audio.low_latency.xml:system/etc/permissions/android.hardware.audio.low_latency.xml \
-  linux/platform/s5p4418/library/lib/libnxvidrc_android.so:system/lib/libnxvidrc_android.so
+  linux/platform/s5p4418/library/lib/ragecontrol/libnxvidrc_android.so:system/lib/libnxvidrc_android.so
 
 PRODUCT_AAPT_CONFIG := xlarge hdpi xhdpi large
 PRODUCT_AAPT_PREF_CONFIG := xhdpi
