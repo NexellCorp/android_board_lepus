@@ -22,17 +22,17 @@ TARGET_NO_RADIOIMAGE := false
 # recovery
 TARGET_RECOVERY_FSTAB := device/nexell/lepus/recovery.fstab
 
-#TARGET_RELEASETOOLS_EXTENSIONS := device/nexell/lepus
-#TARGET_RECOVERY_UPDATER_LIBS += librecovery_updater_lepus
+TARGET_RELEASETOOLS_EXTENSIONS := device/nexell/lepus
+TARGET_RECOVERY_UPDATER_LIBS += librecovery_updater_lepus
 #TARGET_RECOVERY_UI_LIB := librecovery_ui_lepus
 # TARGET_RECOVERY_PIXEL_FORMAT not specified ==> rgb565
 
 # 2ndbootloader, bootloader
-#$(call add-radio-file,2ndbootloader)
-#$(call add-radio-file,bootloader)
-#INSTALLED_RADIOIMAGE_TARGET += 2ndbootloader
-#INSTALLED_RADIOIMAGE_TARGET += bootloader
-#$(warning INSTALLED_RADIOIMAGE_TARGET: $(INSTALLED_RADIOIMAGE_TARGET))
+$(call add-radio-file,2ndbootloader)
+$(call add-radio-file,bootloader)
+INSTALLED_RADIOIMAGE_TARGET += 2ndbootloader
+INSTALLED_RADIOIMAGE_TARGET += bootloader
+$(warning INSTALLED_RADIOIMAGE_TARGET: $(INSTALLED_RADIOIMAGE_TARGET))
 
 # certificate
 #PRODUCT_DEFAULT_DEV_CERTIFICATE := vendor/nexell/security/lepus/release
