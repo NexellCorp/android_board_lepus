@@ -89,6 +89,7 @@ Only the three quirks included above are recognized at this point:
         <MediaCodec name="OMX.NX.AUDIO_DECODER.FFMPEG.mpeg" type="audio/mpeg" />
         <MediaCodec name="OMX.NX.AUDIO_DECODER.FFMPEG.mpegl1" type="audio/mpeg-L1" />
         <MediaCodec name="OMX.NX.AUDIO_DECODER.FFMPEG.mpegl2" type="audio/mpeg-L2" />
+		<MediaCodec name="OMX.NX.AUDIO_DECODER.FFMPEG.ape" type="audio/ape" />
         -->
         <!-- Nexell Video Decoder -->
         <MediaCodec name="OMX.NX.VIDEO_DECODER.3gpp" type="video/3gpp">
@@ -157,6 +158,7 @@ Only the three quirks included above are recognized at this point:
             <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <Limit name="bitrate" range="1-20000000" />
+            <Feature name="adaptive-playback" />
         </MediaCodec>
     </Decoders>
 
@@ -171,7 +173,7 @@ Only the three quirks included above are recognized at this point:
         </MediaCodec>
         <MediaCodec name="OMX.NX.VIDEO_ENCODER.3gpp" type="video/3gpp">
             <Limit name="size" min="176x144" max="1920x1088" />
-            <Limit name="alignment" value="32x16" />
+            <Limit name="alignment" value="2x2" />
             <Limit name="block-size" value="16x16" />
             <Limit name="blocks-per-second" range="6-244800" />
             <Limit name="bitrate" range="1-40000000" />
